@@ -22,3 +22,8 @@ Sample Body Payload :
 Method : POST
 URL : http://{hostname / ip}/api/calculate_product_tax
 Response 200 is OK
+
+Fields :
+product_name : Alpanumeric max 255 digits
+tax_code : integer
+product_price : Decimal value with max 2 digit after period
