@@ -1,0 +1,13 @@
+Database design :
+
+class TaxProductModel(models.Model):
+    id = models.AutoField(primary_key=True, db_index=True)
+    product_name = models.CharField(max_length=255, null=False)
+    tax_code = models.PositiveSmallIntegerField()
+    product_price = models.DecimalField(max_digits=255, decimal_places=2)
+
+Explanation :
+id -> primary key of the table. It's having indexing for optimize query and AutoField for auto increment
+product_name -> field for storing data product name. CharField for storing alphanumeric data that having max 255 and cannot null value
+tax_code -> field for storing tax code. PositiveSmallIntegerField, because it will always having positive integer and small value
+product_price -> field for storing "money" value. DecimalField, having decimal place because from the case it can be having decimal number
