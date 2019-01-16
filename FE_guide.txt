@@ -1,0 +1,24 @@
+FE Guide :
+
+Sample Body Payload :
+{
+	"1": {
+		"product_name": "Lucky Stretch",
+		"tax_code": 2,
+		"product_price": 1000
+	},
+	"2": {
+		"product_name": "Big Mac",
+		"tax_code": 1,
+		"product_price": 1000
+	},
+	"3": {
+		"product_name": "Movie",
+		"tax_code": 3,
+		"product_price": 150
+	}
+}
+
+Method : POST
+URL : http://{hostname / ip}/api/calculate_product_tax
+Response 200 is OK
