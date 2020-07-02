@@ -26,6 +26,9 @@ class TaxProductClass:
             res['price_subtotal'] = 0
             res['tax_subtotal'] = 0
             res['grand_total'] = 0
+            
+            if res:
+                pass
 
             for item_key, item_payload in payload.items():
                 res[item_key] = {}
