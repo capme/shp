@@ -29,6 +29,8 @@ class TaxProductClass:
             
             if res:
                 pass
+            else:
+                res = {}
 
             for item_key, item_payload in payload.items():
                 res[item_key] = {}
